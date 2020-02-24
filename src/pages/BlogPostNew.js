@@ -12,22 +12,109 @@ class BlogPostNew extends React.Component {
     const category = 'TECHNOLOGY';
 
     return (
-      <div className="BlogPostNew__hero">
-        <img className="BlogPostNew__img" src={imgArticle} alt="Imagen" />
+      <section className="BlogPostNew">
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
 
-        <div className="BlogPostNew_cuadro-rojo">
-          <p className="BlogPostNew__category">{category}</p>
-        </div>
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
 
-        <div className="BlogPostNew__section-info">
-          <div className="BlogPostNew__title">
-            <p>{title}</p>
-          </div>
-          <div className="BlogPostNew__article">
-            <article>{article}</article>
-          </div>
-        </div>
-      </div>
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
+
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
+
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
+
+        <a className="BlogPostNew__post" href="/">
+          <figure className="BlogPostNew__post-image">
+            <img src={imgArticle} alt="Imagen" />
+          </figure>
+          <span className="BlogPostNew_cuadro-rojo">
+            <p className="BlogPostNew__category">{category}</p>
+          </span>
+          <section className="BlogPostNew__section-info">
+            <div className="BlogPostNew__title">
+              <p>{title}</p>
+            </div>
+            <div className="BlogPostNew__article">
+              <article>{article}</article>
+            </div>
+          </section>
+        </a>
+      </section>
     );
   }
 }
