@@ -1,5 +1,6 @@
 .BlogPostNew {
-
+	display: grid;
+	grid-template-columns: repeat(3, minmax(100px, 293px));
 	justify-content: center;
 	grid-gap: 28px;
 	align-items: center;
@@ -36,7 +37,7 @@
 	padding-left: 15px;
 	top: -40px;
 	left: -10px;
-	width: 150px;
+	width: 125px;
 }
 
 .BlogPostNew__title {

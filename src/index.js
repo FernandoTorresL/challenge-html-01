@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './global.css';
 
-import BlogPostNew from './pages/BlogPostNew';
+import BlogPosts from './pages/BlogPosts';
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<BlogPostNew />, container);
+ReactDOM.render(<BlogPosts />, container);
