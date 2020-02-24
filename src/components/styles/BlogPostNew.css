@@ -1,0 +1,36 @@
+.BlogPostNew__hero {
+	width: 400px;
+	border: 1px;
+	background-color: blue;
+}
+
+.BlogPostNew__category {
+	font-family: 'Helvetica';
+	font-size: 14px;
+	margin: 10px;
+	color: white;
+}
+
+.BlogPostNew_cuadro-rojo {
+	display: inline-flex;
+	position: absolute;
+	background-color: red;
+	padding: 0px;
+	padding-left: 25px;
+	margin-top: 29px;
+	top: 121px;
+	left: 0px;
+}
+
+.BlogPostNew__title {
+	font-family: 'Helvetica';
+	font-size: 26px;
+}
+
+
+.BlogPostNew__article {
+	font-family: 'Helvetica';
+	font-size: 18px;
+	font-style: normal;
+	color: gray;
+}

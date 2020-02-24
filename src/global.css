@@ -1,0 +1,16 @@
+@font-face{
+  font-family: 'Lato';
+	src: 	local('Lato'),
+				url('/../resources/fonts/Lato/Lato-Semibold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Oswald';
+	src: 	local('Oswald'),
+				url('/../resources/fonts/Oswald/Oswald-Medium.ttf') format('truetype');
+}
+
+body {
+
+	background-color: white;
+}
