@@ -1,0 +1,55 @@
+* {
+    text-decoration: none;
+    /* margin: 0;
+    padding: 0; */
+    list-style: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../../resources/fonts/Oswald/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../../resources/fonts/Lato/Lato-Regular.ttf');
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    height: 60px;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 15px;
+}
+.logo-container {
+    display: inherit;
+    justify-items: center;
+}
+.logo {
+    width: 80px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+.menu__item {
+    padding-left: 30px;
+}
+.menu__item a:visited {
+    color: rgb(170, 170, 170);
+}
+.menu__item a:hover {
+    color: black;
+}
+.hamburger-container {
+    display: inherit;
+    justify-items: center;
+}
+.hamburger__icon {
+    font-size: 24px;
+}

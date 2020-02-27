@@ -1,6 +1,8 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { useState } from 'react';
 import BlogpostsListItem from '../components/BlogpostsListItem';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import './styles/BlogPosts.css';
 
 const Home = () => {
@@ -67,13 +69,17 @@ const Home = () => {
   const [state] = useState(initialState);
 
   return (
-    <div className="Home">
-      <div className="BlogPosts__container">
-        {state.data.map(blogposts => {
-          return <BlogpostsListItem key={blogposts.id} {...blogposts} />;
-        })}
+    <>
+      <Header />
+      <div className="Home">
+        <div className="BlogPosts__container">
+          {state.data.map(blogposts => {
+            return <BlogpostsListItem key={blogposts.id} {...blogposts} />;
+          })}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
