@@ -8,6 +8,7 @@
     height: 150px;
     align-items: center;
     background-color: #1D1F24;
+    margin-top: 100px;
 }
 .footer__logo {
     align-content: center;
@@ -21,7 +22,7 @@
 }
 .footer__logo-text {
     color: #ffffffad;
-
+    margin: 0;
 }
 .footer__options {
     display: inherit;
@@ -54,6 +55,7 @@
     display: inherit;
     grid-template-columns: repeat(5, auto);
     margin-bottom: 10px;
+    align-items: center;
 }
 .footer__contact-social-text {
     padding-right: 10px;
@@ -71,20 +73,69 @@
 }
 .footer__contact-subscribe-input {
     height: 30px;
-    width: 200px;
+    width: 170px;
     border: none;
     padding-left: 20px;
 }
 .footer__contact-subscribe-button {
     height: 32px;
-    width: 130px;
+    width: 110px;
     border: none;
     background-color: #FF565C;
     color: white;
     font-family: 'Oswald';
-    font-size: 18px;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 .footer__contact-subscribe-button:hover {
     background-color: rgb(253, 56, 63);
     cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 830px) {
+    .footer {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 2fr 1fr;
+        height: 280px;
+    }
+    .footer__contact {
+        grid-column: 1 / span 2;
+        justify-self: start;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .footer__contact-subscribe {
+        margin-left: 30px;
+    }
+    .footer__contact-social {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        height: 400px;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% auto;
+    }
+    .footer__logo {
+        grid-row-start: 1;
+    }
+    .footer__contact {
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .footer__options {
+        display: grid;
+        grid-row-start: 3;
+    }
+    .footer__options-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        align-content: center;
+    }
 }
