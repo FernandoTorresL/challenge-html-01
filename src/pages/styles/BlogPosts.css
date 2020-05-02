@@ -1,0 +1,23 @@
+.BlogPosts {
+  padding-top: 10px
+}
+
+.BlogPosts__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .BlogPosts__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .BlogPosts__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
