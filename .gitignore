@@ -71,3 +71,6 @@ typings/
 # Docs Custom
 .cache/
 yarn-error.log
+
+# Personal tmp directories
+tmp_no_git
